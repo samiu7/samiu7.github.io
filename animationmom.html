@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+
+		#tree{
+			width:500px;
+			height: 700px;
+			background-color:red;
+			background-image: url(https://www.gardeningknowhow.com/wp-content/uploads/2020/10/christmas-bug-400x533.jpg);
+			background-size:cover;
+			background-repeat: no-repeat;
+			position: absolute;
+			
+		}
+
+		.glass{
+			width: 50px;
+			height: 50px;
+			background-image: url(ornament.png);
+			background-size:cover;
+			background-repeat: no-repeat;
+			position: absolute;
+			}
+
+		
+	</style>
+
+
+
+
+</head>
+<body>
+	<div id="tree">
+	</div>
+
+<script type="text/javascript">
+
+	var tree = document.getElementById('tree');
+		function makeOrnaments(){
+
+		tree.addEventListener("click", function (event) {
+			
+			var ornament = document.createElement("div");
+			tree.appendChild(ornament);
+			ornament.classList.add("glass");
+
+			console.log(event)
+
+			ornament.style.left = event.x -25 + "px"
+			ornament.style.top = event.y -25+ "px"
+			
+		})
+
+	} 
+
+	
+	
+	
+makeOrnaments();
+	
+
+</script>
+<center>
+
+</center>	
+
+</div>
+
+
+
+</body>
+</html>

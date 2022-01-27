@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<style type="text/css">
+	#sami{
+		width:100px;
+		height:100px;
+		background-color:blue;
+	}
+
+	</style>
+
+</head>
+
+
+
+<body>
+
+<!-- 	<div id="sami"></div>
+ -->	<a href="https://nytimes.com">link</a>
+	<p>this is my paragraph</p>
+
+</body>
+
+
+<script type="text/javascript">
+	
+	
+	function makeSamiSteak(){
+
+		var steak = document.createElement("div");
+		document.body.appendChild(steak)
+		steak.id = "sami";
+
+	steak.addEventListener("click", function(){
+		console.log('hi sami! do you like steak')
+	})
+
+
+	}
+
+	makeSamiSteak();
+
+	// setInterval(makeSamiSteak, 100)
+
+
+
+</script>
+
+</html>

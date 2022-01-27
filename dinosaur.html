@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+	
+	function makeCookie() {
+		var cookie = document.createElement("div")
+		
+		document.body.appendChild(cookie);
+		cookie.style.height = "200px"
+		cookie.style.width = "200px"
+		cookie.style.backgroundImage = "url(cookie.jpg)"
+		cookie.style.backgroundSize = "cover"
+		cookie.style.display = "inline-block"
+		cookie.addEventListener("click", function(){
+			cookie.style.backgroundImage = "url(dinosaur.jpg)"
+			})
+	
+
+		}
+
+	setInterval(makeCookie,500)
+
+
+</script>
+
+	
+</body>
+</html>

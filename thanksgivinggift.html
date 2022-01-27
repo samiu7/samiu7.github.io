@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+	#text{
+		height: 200px;
+		width: 500px;
+
+
+	}
+</style>
+
+
+	</head>
+
+
+
+<body>
+
+	<div id = text> </div>
+
+
+	<script type="text/javascript">
+
+	 var x;
+
+	 var thanksGiving = ["url(cookie.jpg)", "url(dinosaur.jpg)", "url()", "url()","url()"]
+
+	 console.log(thanksGiving[3])
+
+	 var text = document.getElementById("text")
+
+	document.addEventListener("keypress", function names(event)
+	{
+
+		x = Math.round(Math.random()*6)
+		
+		if (event.key == "s")
+		text.innerText = thanksGiving[x];
+
+		else if (event.key !== "s")
+
+						text.innerText = "";
+
+	})
+
+
+	</script>
+
+
+
+
+</body>
+</html>
