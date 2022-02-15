@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+		#ball{
+			width: 100px;
+			height: 100px;
+			background-image: url(soccerball.png);
+			background-size:cover;
+			background-repeat: no-repeat;
+			position: absolute;
+			top: 400px;
+			left: 200px;
+			z-index: 1;
+
+			}
+
+		#goal{
+			width: 500px;
+			height: 200px;
+			background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPJ3ySyJwKNfhMnz1LZEF03C-DHpDo8M-X-A&usqp=CAU);
+			background-size:cover;
+			background-repeat: no-repeat;
+			position: absolute;
+			left: 800px;
+			top:350px;
+			z-index: 0;
+
+	}
+
+	#ajai{
+
+		height: 200px;
+		width: 200px;
+		background-image: url(https://dalton.myschoolapp.com/ftpimages/98/user/large_user6803718_5236296_395.jpeg?resize=200,200);
+			background-size:cover;
+			background-repeat: no-repeat;
+			position: absolute;
+			top:350px;
+
+
+	}
+
+
+	</style>
+</head>
+<body>
+	<div id="ajai"></div>
+	<div id="ball"></div>
+	<div id="goal"></div>
+
+<script type="text/javascript">
+	
+	
+	var ball = document.getElementById('ball');
+
+
+
+	document.addEventListener("click", function soccerShot(event){
+
+		
+		console.log(event.clientX, event.clientY);
+
+		var x = event.clientX;
+		var y = event.clientY;
+
+		ball.style.top = y+"px";
+		ball.style.left = x+"px";
+		
+
+
+		})
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
