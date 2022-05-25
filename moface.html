@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+		.face{
+		width: 100px;
+		height: 100px;
+		background-image: url(Mo.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		}
+
+
+	</style>
+
+</head>
+<body>
+	<script type="text/javascript">
+		var input = document.getElementById('input');
+		var x = 0;
+
+		function createmo() {
+			var mo = document.createElement("div");
+			document.body.appendChild(mo);
+			mo.classList.add("face");
+
+
+		function changePosition(){
+			
+			mo.style.left = 1000 * Math.random() + "px";
+			mo.style.top = 1000 * Math.random() + "px";
+		
+
+		mo.addEventListener("click", function(){
+			console.log("hi")
+			x = x + 1;
+			input.value = x;
+			corona.classList.remove("face")})
+			
+
+		setInterval(changePosition, 2000)};
+
+		setInterval(createMO, 1000);
+
+j
+
+
+
+
+
+		}
+	</script>
+</body>
+</html>
